@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="shortcut icon" href="img/avatar_logo.png">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    
     <style>
         body{
             /*background-image: url(/img/letişim.jpg);*/
@@ -31,8 +34,8 @@
             list-style-type: none;
             float: left;
             margin-top: 15px;
-            margin-left: 70px;
-            padding-left: 70px;
+            margin-left: 20px;
+            padding-left: 40px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             
         }
@@ -41,7 +44,6 @@
              text-decoration: none;
              position: sticky;
              top: 0px;
-             transition: width 2sn, height 2sn;
              
         }
         div ul li>a:hover{
@@ -410,7 +412,7 @@ padding-left: 100px;}
       
             <li><a class="boyut_hakkımda" href="#PROFILIM">PROFİLİM</a></li> 
             <li><a class="boyut_hakkımda" href="#hobilerim">HOBİLERİM</a></li> 
-            <li><a class="boyut_hakkımda" href="#Özgecmis">ÖZGEÇMİŞ</a><li>  
+            <li><a style="margin-left: 20px;" class="boyut_hakkımda" href="#Özgecmis">ÖZGEÇMİŞ</a><li>  
             <li><a class="boyut_hakkımda" href="#PROJELER">PROJELER</a></li>  
             <li><a class="boyut_hakkımda" href="#ILETISIM">İLETİŞİM</a></li>
         </ul>
@@ -441,7 +443,7 @@ padding-left: 100px;}
             <br><br><br><br>
         
             <h1 class="basliklar">HOBİLERİM</h1>
-            <div >
+            <div class="hobi">
           <div class="owl-carousel owl-theme">
             <div class="item">En sevdiğim spor<img src="img/futbol.jpg" alt=""></div>
             <div class="item"><img src="img/filmjpg.jpg" alt=""></div>
@@ -619,6 +621,34 @@ padding-left: 100px;}
 
         </div>
         
-
+        <script>
+          window.sr=new ScrollReveal()
+          sr.reveal('.hakkımdaki',{
+            delay:500
+          });
+          sr.reveal('.bioarka',{
+            distance:"100px",
+            origin: "left",
+          });
+          sr.reveal('.hobi',{
+            delay:500,
+            distance:"100px",
+            origin:"bottom"
+          });
+          sr.reveal('.ÖZGEC',{
+            opacity:0,
+            interval:500
+          });
+          sr.reveal('.gelistirici',{
+            delay:500,
+            distance:"100px",
+            origin:"bottom"
+          });
+          sr.reveal('.iletisim',{
+            delay:500,
+            distance:"100px",
+            origin:"right"
+          });
+        </script>
 </body>
 </html>
