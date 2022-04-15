@@ -152,7 +152,6 @@ div ul li>a:hover{
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      border-radius: 15px;
     
  /* border: 1px solid black;*/
 }
@@ -163,6 +162,7 @@ div ul li>a:hover{
 }
 .hakkımdaki{
     position:sticky;
+    top: 0px;
     height: 92px;
     width: 100%;
     background-color:#4b1b5b;
@@ -170,7 +170,7 @@ div ul li>a:hover{
     
 }
 .boyut_hakkımda{
-    margin-top: 1px;
+    padding-top: 12px;
     font-size: 20px;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: hsla(0,0%,100%,.7);
