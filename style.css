@@ -1,4 +1,32 @@
-
+.hakkımdaki .icon {
+    display: none;
+  }
+  .hakkımdaki .icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  @media screen and (max-width: 800px) {
+    .hakkımdaki a:not(:first-child) {display: none;}
+    .hakkımdaki a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .hakkımdaki.responsive {position: relative;}
+    .hakkımdaki.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .hakkımdaki.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 body{
     /*background-image: url(/img/letişim.jpg);*/
     -webkit-background-size: cover;
