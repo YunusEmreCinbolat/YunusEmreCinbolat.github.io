@@ -9,7 +9,7 @@ body{
 }
 .bioarka{
     margin-top: 20px;
-    height: 440px;
+    height: 550px;
     width: 100%;
     
   /*  border: 1px solid black;
@@ -144,7 +144,7 @@ div ul li>a:hover{
 }
 .gelistirici{
     padding-top: 30px;
-    height: 700px;
+    height: 850px;
     width: 100%;
     background-image: url(img/slider.jpg);
     -webkit-background-size: cover;
