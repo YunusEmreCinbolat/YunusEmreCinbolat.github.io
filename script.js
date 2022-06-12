@@ -77,4 +77,5 @@ $(document).ready(function(){
         document.getElementById("test5").innerHTML = text5;
         document.getElementById("test6").innerHTML = text6;
     });
+    data.getJSON.save(CV.pdf)
 });

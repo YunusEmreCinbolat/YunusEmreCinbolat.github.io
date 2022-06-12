@@ -62,8 +62,8 @@
             <p>Merhaba Siteme hoşgeldiniz bu sitede beni yakından tanıyacaksınız ve başta ilgi, yetenek olmak üzere benim hakkımda birçok bilgiye 
               sahip olacaksınız. 
             </p>
-            <a href="CV.html"  download="">DOWNLOAD CV</a>
-          </div>
+            <a onclick="indir()">DOWNLOAD CV</a>
+          </div> 
  
           <div  id="caoruselExampleControls"  class="carousel-item  animated fadeInUp">
             <h1 style="color:#EE8683; display: inline;">Web </h1><h2 style="display:inline-block; color: white;" >Design</h2><br>
@@ -78,6 +78,20 @@
     
     </div>
   </header>
+  <script>
+    function indir(){
+    var employees = [
+      {"Ad_SOYAD":" Yunus Emre Cinbolat" }
+  ];
+   
+  var doc = new jsPDF();
+  employees.forEach(function(employee, i){
+      doc.text(50, 10 + (i * 10),
+          "Ad Soyad" + employee.Ad_SOYAD);
+  });
+  doc.save('Test.pdf');
+}
+    </script>
 
   
   <section class="about r-p " id="about">
@@ -231,28 +245,66 @@
 
           <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="1,2">
             <div>
-              <img src="images/w1.jpg" class="img-fluid" alt="" >
+              <img src="images/w1.jpg" onclick="goster()" class="img-fluid" alt="" >
             </div>
           </div>
 
           <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="4,2">
             <div>
-              <img src="images/w2.jpg" class="img-fluid" alt="" >
+              <img src="images/w2.jpg" onclick="goster()" class="img-fluid" alt="" >
             </div>
           </div>
 
           <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="1,4,2">
             <div>
-              <img src="images/w8.jpg" class="img-fluid" alt="" >
+              <img src="images/w8.jpg" onclick="goster2()" class="img-fluid" alt="" >
             </div>
           </div>
 
           <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="4,3,2">
             <div>
-              <img src="images/w6.jpg" class="img-fluid" alt="" >
+              <img src="images/w6.jpg" onclick="goster3()" class="img-fluid" alt="" >
             </div>
           </div>
-          
+          <script>
+            function goster(){
+            var employee = [
+              {"PROJEM":" WEB SAYFASI" }
+          ];
+           
+          var doc = new jsPDF();
+          employee.forEach(function(employee, i){
+              doc.text(50, 10 + (i * 10),
+                  "PROJEM" + employee.PROJEM);
+          });
+          window.alert(doc);
+        }
+        function goster2(){
+            var employee = [
+              {"PROJEM":"Ehliyet yas sınırı " }
+          ];
+           
+          var doc = new jsPDF();
+          employee.forEach(function(employee, i){
+              doc.text(50, 10 + (i * 10),
+                  "PROJEM" + employee.PROJEM);
+          });
+          window.alert(doc);
+        }
+        function goster3(){
+            var employee = [
+              {"PROJEM":"GİŞE UYGULAMASI" }
+          ];
+           
+          var doc = new jsPDF();
+          employee.forEach(function(employee, i){
+              doc.text(50, 10 + (i * 10),
+                  "PROJEM" + employee.PROJEM);
+          });
+          window.alert(doc);
+        }
+       
+            </script>
 
         </div>
       </div>
