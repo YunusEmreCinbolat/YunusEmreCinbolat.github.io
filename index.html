@@ -267,13 +267,29 @@ doc.save('Test.pdf');
               <img src="images/w6.jpg" onclick="goster3()" class="img-fluid" title="Gişe uygulaması" alt="Gişe uygulaması" >
             </div>
           </div>
+
          
 
         </div>
       </div>
     </div>
-
+       
   </section>
+  <script>
+    function Proje_indir(){
+      var employees = [
+    {"Gise_uygulamasi":"Otoyoldan geçen arabaların agirlik ve \n hiz durumlarına göre ceza \n kesen uygulama","Web":"Kendi kisisel web sitem\nYunusemre1530.github.io","Ehliyet":"Bireyin özel durumuna göre ehliyet durumu hesaplama","Hesap":"Basit hesap makinası"}
+];
+ 
+var doc = new jsPDF();
+employees.forEach(function(employee, i){
+    doc.text(50, 10 + (i * 10),
+        "            PROJELERIM          "+"\n\n" + "Gise uygulamasi"+"\n"+employee.Gise_uygulamasi+"\n\n"+"Web uygulamam"+"\n"+ employee.Web+"\n\n"+"Ehliyet"+"\n"+employee.Ehliyet+"\n\n"+"Hesap makinasi"+"\n"+employee.Hesap );
+});
+doc.save('Test.pdf');
+    }
+    </script>
+    <button class="btn btn-primary " onclick="Proje_indir()" style="margin-left: 400px;">PROJELERİ İNDİR</button>
   <div style="height: 200px"></div>
 
   <section class="contact r-p bg-sec" id="contact">
