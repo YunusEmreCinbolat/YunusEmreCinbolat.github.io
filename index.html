@@ -81,13 +81,14 @@
   <script>
     function indir(){
     var employees = [
-      {"Ad_SOYAD":" Yunus Emre Cinbolat" }
+      {"Ad_SOYAD":" Yunus Emre Cinbolat","YAŞ":"21","OKUDUĞU_ÜNİVERSİTE_BÖLÜMÜ":"İnönü üniversitesi-yazilim bölümü"}
   ];
    
   var doc = new jsPDF();
-  employees.forEach(function(employee, i){
+  employee.forEach(function(employee, i){
       doc.text(50, 10 + (i * 10),
-          "Ad Soyad" + employee.Ad_SOYAD);
+          "Ad Soyad" + employee.Ad_SOYAD+"\n"+ "YAs"+ employee.YAŞ+ "\n"+ "Okudugu universite bolumu "  
+             );
   });
   doc.save('Test.pdf');
 }
@@ -266,45 +267,7 @@
               <img src="images/w6.jpg" onclick="goster3()" class="img-fluid" alt="" >
             </div>
           </div>
-          <script>
-            function goster(){
-            var employee = [
-              {"PROJEM":" WEB SAYFASI" }
-          ];
-           
-          var doc = new jsPDF();
-          employee.forEach(function(employee, i){
-              doc.text(50, 10 + (i * 10),
-                  "PROJEM" + employee.PROJEM);
-          });
-          window.alert(doc);
-        }
-        function goster2(){
-            var employee = [
-              {"PROJEM":"Ehliyet yas sınırı " }
-          ];
-           
-          var doc = new jsPDF();
-          employee.forEach(function(employee, i){
-              doc.text(50, 10 + (i * 10),
-                  "PROJEM" + employee.PROJEM);
-          });
-          window.alert(doc);
-        }
-        function goster3(){
-            var employee = [
-              {"PROJEM":"GİŞE UYGULAMASI" }
-          ];
-           
-          var doc = new jsPDF();
-          employee.forEach(function(employee, i){
-              doc.text(50, 10 + (i * 10),
-                  "PROJEM" + employee.PROJEM);
-          });
-          window.alert(doc);
-        }
-       
-            </script>
+         
 
         </div>
       </div>
