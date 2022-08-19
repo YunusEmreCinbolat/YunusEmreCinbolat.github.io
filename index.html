@@ -62,7 +62,7 @@
             <p>Merhaba Siteme hoşgeldiniz bu sitede beni yakından tanıyacaksınız ve başta ilgi, yetenek olmak üzere benim hakkımda birçok bilgiye 
               sahip olacaksınız. 
             </p>
-            <a onclick="indir()">DOWNLOAD CV</a>
+            <a href="images/CV YUNUS EMRE CİNBOLAT .pdf" download>DOWNLOAD CV</a>
           </div> 
  
           <div  id="caoruselExampleControls"  class="carousel-item  animated fadeInUp">
@@ -78,21 +78,7 @@
     
     </div>
   </header>
-  <script>
-    function indir(){
-      var employees = [
-    {"AD-SOYAD":"Yunus Emre Cinbolat","Yas":"21","BOLUMU":"Yazilim muhendisliği","A1":"Yapay Zeka","A2":"Web Developer","S1":"Yapay Zekaya Giris","S2":"HTML5-CSS3","i1":"Yunus.Emre.Cinbolat@gmail.com","i2":"0553832****","i3":"github.com/Yunusemre1530","i4":"https://www.linkedin.com/in/yunus-emre-cinbolat-545759233/"}
-];
- 
-var doc = new jsPDF();
-employees.forEach(function(employee, i){
-    doc.text(50, 10 + (i * 10),
-        "AD SOYAD" + "Yunus emre cinbolat"+"\n"+"Yas"+ employee.Yas+"\n\n"+"BOLUM:"+employee.BOLUMU+"\n\n"+"Arastirma Alanlari"+"\n"+employee.A1+"\n"+employee.A2+"\n\n"+"Sertifikalarim"+"\n"+employee.S1+"\n"+employee.S2+"\n\n"+"iletisim bilgilerim"+"\n"+"E-MAIL"+"\n"+employee.i1+"\n"+"Telefon:"+employee.i2+"\n"+"Github:"+"\n"+employee.i3+"\n"+"Linkedin"+"\n"+employee.i4 );
-});
-doc.save('Test.pdf');
-    }
-    </script>
-
+  
 
   
   <section class="about r-p " id="about">
